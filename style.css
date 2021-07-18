@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url('./assets/fond_argo.png');
+  text-align: center;
+  padding: 2em;
+  margin-bottom:3rem;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+h1, h2{
+  font-family: 'Uncial Antiqua', cursive, 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h2{
+  display: block;
+  margin: auto;
+  margin-bottom: 3.5rem;
+  background:linear-gradient(to top, rgba(187, 126, 179, 0.5) 0%, rgba(43, 15, 120,0.5) 3px, transparent 3px) no-repeat;
+  background-size:0 100%;
+  transition-property: background-size;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+h2:hover {
+  background-size: 100% 100%;
+}
+
+label {
+  margin-bottom: 1.75em;
+  padding-top: 1.5rem;
+}
+
+.new-member-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  margin-left: 9em;
+  width: 40%;
+}
+
+ul {
+  columns: 3;
+  margin-top: 2.5rem;
+}
+
+footer {
+  margin-top: 2em;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+  position : absolute; bottom: 0;
+  width:100%;
+  text-align: center;
+}
+
+/* BS Style */
+
+.bg-image {
+  background-image: url('./assets/argonautes.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3.5rem;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+input, .btn-login{
+  border-radius: 2rem;
+}
+.btn-login {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.col-lg-8 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
